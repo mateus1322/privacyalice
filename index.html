@@ -1,106 +1,48 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>@itsalicefonseca - Assinatura PIX</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-  .glow-btn {
-    box-shadow: 0 0 15px #ff6600, 0 0 30px #ff6600;
-    transition: 0.25s;
-  }
-  .glow-btn:hover {
-    box-shadow: 0 0 30px #ff8533, 0 0 60px #ff6600;
-  }
-  body { 
-    background:#0f0f0f; 
-    color:#fff; 
-    font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto; 
-  }
-  .lock-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0,0,0,0.35); /* leve escurecimento */
-  }
-  .lock-overlay span {
-    font-size: 2.5rem;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Conteúdos Exclusivos</title>
 </head>
-<body class="min-h-screen">
+<body class="bg-black text-white min-h-screen flex items-center justify-center">
+  <div class="max-w-5xl mx-auto p-4 w-full">
+    
+    <!-- Título -->
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
+      Conteúdos Exclusivos 🔒
+    </h1>
 
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-orange-500 to-orange-300 p-6 rounded-b-3xl">
-    <div class="max-w-3xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-4">
-        <img src="FB_IMG_1726461881172.jpg" alt="Avatar" class="w-16 h-16 rounded-full border-4 border-white object-cover">
-        <div>
-          <h1 class="text-2xl font-bold">@itsalicefonseca</h1>
-          <p class="text-sm italic opacity-90">"Entre segredos e desejos… descubra o prazer em cada clique." 🔥</p>
-        </div>
+    <!-- Grid de imagens -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <!-- Imagem 1 -->
+      <div class="relative">
+        <img src="previa 1.jpg" alt="Prévia 1" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-12 h-12">
+        </span>
       </div>
-      <img src="logo privacy.png" alt="Logo" class="h-14 object-contain">
+
+      <!-- Imagem 2 -->
+      <div class="relative">
+        <img src="previa 2.jpg" alt="Prévia 2" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-12 h-12">
+        </span>
+      </div>
+
+      <!-- Imagem 3 -->
+      <div class="relative">
+        <img src="previa 3.jpg" alt="Prévia 3" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-12 h-12">
+        </span>
+      </div>
+
     </div>
-  </header>
 
-  <main class="max-w-3xl mx-auto p-6">
-    <!-- Postagens e Mídias -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-      <div class="bg-neutral-800 rounded-xl p-6 text-center">
-        <h3 class="text-2xl font-bold text-orange-400">888</h3>
-        <p class="text-sm">Postagens</p>
-      </div>
-      <div class="bg-neutral-800 rounded-xl p-6 text-center">
-        <h3 class="text-2xl font-bold text-orange-400">1433</h3>
-        <p class="text-sm">Mídias</p>
-      </div>
-    </section>
-
-    <!-- Galeria com 3 fotos censuradas e cadeado -->
-    <section class="mt-10">
-      <h2 class="text-lg font-semibold mb-4">Conteúdos Exclusivos 🔒</h2>
-
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <!-- Foto censurada 1 -->
-        <div class="relative w-full h-48 rounded-lg overflow-hidden">
-          <img src="previa 1.jpg" alt="Conteúdo Exclusivo" class="w-full h-full object-cover">
-          <div class="lock-overlay">
-            <span>🔒</span>
-          </div>
-        </div>
-
-        <!-- Foto censurada 2 -->
-        <div class="relative w-full h-48 rounded-lg overflow-hidden">
-          <img src="previa 2.jpg" alt="Conteúdo Exclusivo" class="w-full h-full object-cover">
-          <div class="lock-overlay">
-            <span>🔒</span>
-          </div>
-        </div>
-
-        <!-- Foto censurada 3 -->
-        <div class="relative w-full h-48 rounded-lg overflow-hidden">
-          <img src="previa 3.jpg" alt="Conteúdo Exclusivo" class="w-full h-full object-cover">
-          <div class="lock-overlay">
-            <span>🔒</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Área PIX / Checkout -->
-    <section class="text-center mt-10">
-      <h2 class="text-lg font-semibold mb-4">Assinatura Exclusiva — R$40</h2>
-
-      <a href="https://go.tribopay.com.br/pgpgf4tx6w" target="_blank"
-         class="glow-btn bg-orange-600 text-white px-10 py-4 rounded-full font-bold text-xl inline-block">
-        🔥 Assinar Agora!
-      </a>
-    </section>
-  </main>
-
+  </div>
 </body>
 </html>
