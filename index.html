@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Conteúdos Exclusivos</title>
 </head>
@@ -23,31 +23,61 @@
     Conteúdos Exclusivos 🔒
   </h1>
 
-  <!-- Grid de imagens horizontal -->
-  <div class="w-full max-w-sm flex space-x-4 overflow-x-auto pb-4">
-    
-    <!-- Imagem 1 -->
-    <div class="relative min-w-[200px] flex-shrink-0">
-      <img src="previa 1.jpg" alt="Prévia 1" class="w-full rounded-lg shadow-lg object-cover">
-      <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
-        <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
-      </span>
+  <!-- Grid de imagens -->
+  <div class="w-full max-w-5xl">
+
+    <!-- Desktop: 3 colunas / Mobile: scroll horizontal -->
+    <div class="hidden md:grid md:grid-cols-3 md:gap-4">
+      <!-- Imagem 1 -->
+      <div class="relative">
+        <img src="previa 1.jpg" alt="Prévia 1" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
+        </span>
+      </div>
+
+      <!-- Imagem 2 -->
+      <div class="relative">
+        <img src="previa 2.jpg" alt="Prévia 2" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
+        </span>
+      </div>
+
+      <!-- Imagem 3 -->
+      <div class="relative">
+        <img src="previa 3.jpg" alt="Prévia 3" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
+        </span>
+      </div>
     </div>
 
-    <!-- Imagem 2 -->
-    <div class="relative min-w-[200px] flex-shrink-0">
-      <img src="previa 2.jpg" alt="Prévia 2" class="w-full rounded-lg shadow-lg object-cover">
-      <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
-        <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
-      </span>
-    </div>
+    <!-- Mobile: scroll horizontal -->
+    <div class="flex space-x-4 overflow-x-auto md:hidden pb-4">
+      <!-- Imagem 1 -->
+      <div class="relative min-w-[200px] flex-shrink-0">
+        <img src="previa 1.jpg" alt="Prévia 1" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
+        </span>
+      </div>
 
-    <!-- Imagem 3 -->
-    <div class="relative min-w-[200px] flex-shrink-0">
-      <img src="previa 3.jpg" alt="Prévia 3" class="w-full rounded-lg shadow-lg object-cover">
-      <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
-        <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
-      </span>
+      <!-- Imagem 2 -->
+      <div class="relative min-w-[200px] flex-shrink-0">
+        <img src="previa 2.jpg" alt="Prévia 2" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
+        </span>
+      </div>
+
+      <!-- Imagem 3 -->
+      <div class="relative min-w-[200px] flex-shrink-0">
+        <img src="previa 3.jpg" alt="Prévia 3" class="w-full rounded-lg shadow-lg object-cover">
+        <span class="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <img src="logo privacy.png" alt="Cadeado" class="w-10 h-10">
+        </span>
+      </div>
     </div>
 
   </div>
